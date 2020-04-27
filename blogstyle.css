@@ -1,0 +1,294 @@
+.container{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 400px 400px 200px repeat(2,1fr) ;
+    grid-template-rows: 200px repeat(13,100px) 150px;
+    grid-template-areas:
+    "hd hd hd hd hd"
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ct ct ct sd sd "
+    "ft ft ft ft ft "
+    ;
+    background-color: #c2d6d6;
+    font-family:"Raleway", sans-serif;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 12px;
+    border:1px ;
+}
+
+/* Header */
+.header{
+    grid-area: hd;
+    font-size: large;
+    text-align: center;
+    background-image: url(img/ginger&bloom_flats-header+copy.jpg);
+    background-size: stretch;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+section.transbox{
+  margin: 60px 40px 0 40px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  z-index:2 ;
+}
+
+section.transbox span{
+  z-index: 3;
+}
+
+/*header navbar*/
+ul.side-nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+  position: fixed;
+  width: 100%;
+  height:auto;
+  z-index: 1;
+}
+
+li{
+  float: left;
+}
+  
+   li a {
+    display: block;
+    color: #ebf0fa;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+   li a:hover{
+      background-color:#ebf0fa;
+      color: black;
+  }
+
+  .right{
+   float: right;
+  }
+  
+
+/* content */
+.content{
+    display: flex;
+    flex-direction: column;
+    grid-area: ct;
+    padding: 6px 4px;
+    margin: 4px 4px 4px 4px;
+    background-color:#ebf0fa ;
+
+
+}
+
+/*Card Post*/
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 70%;
+  height: 40%;
+  border-radius: 6px;
+  margin:10px 10px;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height:80% ;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-btn{
+  margin: 20px 0 20px 0;
+  padding: 8px 5px;
+
+}
+
+#card-btn{
+  background-color: #ebf0fa;
+  border: 2px solid black;
+  color:black;
+  padding: 12px 28px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#card-btn:hover{
+  background-color: black;
+  color: #ebf0fa;
+}
+
+/* slidebar */
+.slidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: sd;
+    background-color:#ebf0fa ;
+    padding: 6px 4px;
+    margin: 4px 4px 4px;
+}
+
+.card-slidebar{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+  transition: 0.3s;
+  width: 100%;
+  height: 20%;
+  border-radius: 6px;
+  margin:10px 10px;
+}
+
+.card-slidebar:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+div.card-slidebar h2{
+  margin: 3px 0 4px 3px;
+
+}
+
+div.box-slidecard{
+  height: 30%;
+}
+
+div.box-slidecard img{
+  height:50%;
+}
+
+div.card-slidebar section.Most-like h3,article{
+  margin: 1px 0 1px 3px;
+}
+
+div.card-slidebar div.card-btn{
+  display: flex;
+  justify-content: flex-end;
+  margin: 4px 1px 2px 0;
+  padding: 1px 2px;
+}
+
+#underline{
+  text-decoration: underline;
+}
+
+
+/*Popular post Slidebar*/
+
+div.card-slidebar ul.list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 1px solid yellow;
+  border-radius: 3px;
+
+}
+
+div.card-slidebar ul.list li{
+  display:block ;
+  overflow: auto;
+  width: 94.5%;
+  padding: 4px 8px;
+  border: 1px solid #c2d6d6;
+  border-radius: 3px;
+
+
+}
+
+li img{
+  display: inline-block;
+  margin:1px 3px 1px 0 ;
+  width:50px;
+  height:50px;
+}
+li:hover {
+  background-color:rgba(0, 0, 0, 0.911);
+  color:#ebf0fa;
+}
+
+.list li span{
+  display: inline-block;
+}
+span.name{
+  font-style:italic;
+}
+
+
+/*Tags Slidebar*/
+
+div.card-slidebar p.tags{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 2px 2px;
+}
+
+div.card-slidebar p.tags span{
+  margin: 5px;
+  background-color:black ;
+  opacity: 0.3;
+  color: #ffffff;
+}
+
+div.card-slidebar p.tags span.selected{
+  background-color: black;
+  opacity: 1;
+  color:#ebf0fa;
+
+}
+
+#tag{
+  margin: 5px 10px;
+  border-radius: 6px;
+  padding: 1px 0 1px 10px;
+  background-color: black;
+  color: white;
+}
+
+
+/* footer */
+.footer{
+  background-color:black ;
+  color:#ebf0fa ;
+  grid-area: ft;
+
+}
+
+#footer-link{
+  background-color: #ebf0fa;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  
+}
