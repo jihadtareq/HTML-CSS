@@ -210,13 +210,10 @@ div.card-slidebar ul.list{
   margin: 0;
   padding: 0;
   list-style-type: none;
-  border: 1px solid yellow;
-  border-radius: 3px;
-
 }
 
 div.card-slidebar ul.list li{
-  display:block ;
+  display:flex ;
   overflow: auto;
   width: 94.5%;
   padding: 4px 8px;
@@ -227,8 +224,7 @@ div.card-slidebar ul.list li{
 }
 
 li img{
-  display: inline-block;
-  margin:1px 3px 1px 0 ;
+  margin:1px 4px 1px 0 ;
   width:50px;
   height:50px;
 }
@@ -237,12 +233,14 @@ li:hover {
   color:#ebf0fa;
 }
 
-.list li span{
-  display: inline-block;
+#name{
+  margin-bottom: 4px;
+  padding-bottom: 2px;
+  font-weight: bold;
+
 }
-span.name{
-  font-style:italic;
-}
+
+
 
 
 /*Tags Slidebar*/
