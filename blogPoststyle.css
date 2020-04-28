@@ -1,0 +1,195 @@
+.container,body{
+    display: grid;
+    margin: 0;
+    grid-template-columns: 160px 100px 400px 400px;
+    grid-template-rows: 200px repeat(8,100px) 150px;
+    grid-template-areas:
+     "hd hd hd hd hd"
+     "sd sd ct ct ct"
+     "sd sd ct ct ct"
+     "sd sd ct ct ct"
+     "sd sd ct ct ct"
+     "sd sd ct ct ct"
+     "sd sd ct ct ct"
+     "sd sd ct ct ct"
+     "sd sd ct ct ct"
+     "ft ft ft ft ft "
+    ;
+    background-color: #c2d6d6;
+    font-family:"Raleway", sans-serif;
+}
+.container{
+    margin: 0;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 12px;
+    border:1px ;
+}
+
+/* Header */
+.header{
+    grid-area: hd;
+    font-size: large;
+    text-align: center;
+    background-image: url(img/ginger&bloom_flats-header+copy.jpg);
+    background-size: stretch;
+    width:1349px;
+    z-index: 1;
+
+
+}
+
+section.transbox{
+  margin: 60px 40px 0 40px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+section.transbox span{
+    z-index: 3;
+}
+
+/*header navbar*/
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+  position: fixed;
+  width: 100%;
+  height:auto;
+  z-index: 2;
+}
+
+li{
+  float: left;
+}
+  
+   li a {
+    display: block;
+    color: #ebf0fa;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+   li a:hover{
+      background-color:#ebf0fa;
+      color: black;
+  }
+
+  .right{
+   float: right;
+  }
+
+/*content*/
+.content{
+    grid-area: ct;
+    background-color:#ebf0fa ;
+    margin: 4px 4px 4px;
+}
+.reacts{
+    display: flex;
+    flex-direction: row;
+}
+.about-img{
+    display: flex;  
+}
+.about-img p{
+    margin: 0;
+}
+.username{
+    font-weight: bold;
+}
+#card-img{
+    width: 65%;
+    height:70% ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color:#c2d6d6 ;
+
+}
+#card-img img{
+    width:100%;
+}
+
+/*slidebar*/
+.slidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: sd;
+    background-color:#ebf0fa ;
+    padding: 6px 4px;
+    margin: 4px 4px 4px;
+}
+
+.card-slidebar{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding:4px ;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 6px;
+  margin:10px 10px;
+}
+
+.card-slidebar:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+div.card-slidebar h2{
+  margin: 3px 0 4px 3px;
+
+}
+
+div.box-slidecard{
+  height: 60%;
+}
+
+div.box-slidecard img{
+  margin: 4px 2px;
+  padding-left: 3px;
+  width: 230px;  
+  height:50%;
+}
+
+.material-icons.md-20 
+{ 
+     font-size: 20px; 
+}
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+
+div.card-slidebar section.Personal-info h3,article,i{
+  margin: 1px 0 1px 3px;
+}
+.about{
+    display: flex;  
+}
+.about p{
+    margin: 0;
+}
+/* footer */
+.footer{
+    background-color:black ;
+    color:#ebf0fa ;
+    grid-area: ft;
+    width:1325px;
+  
+  }
+  
+  #footer-link{
+    background-color: #ebf0fa;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    
+  }
+  
