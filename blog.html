@@ -6,9 +6,12 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="blogstyle.css" >
+        <link rel="stylesheet" href="mobilestyle.css" >
+        <link rel="stylesheet" href="tabletStyle.css" >
     </head>
 
-    <body class="container">
+    <body class="body">
+        <div class="container">
     <!--Header-->
      <div class="header">
          <section class="transbox">
@@ -21,8 +24,7 @@
 
      <!-- TODO: Navbar -->
         <ul class="side-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog Post</a></li>
+            <li><a href="blog.html">Home</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
             <li class="right"><a href="#">Log out</a></li>
@@ -32,6 +34,8 @@
      <div class="content box">
          <div class="card">
              <img src="img/nature1.jpg" alt="Green Nature">
+             <!--Image caption-->
+             <span><p>Natural life always wins</p></span>
              <div class="card-btn">
                  <a href="blogPost.html" id="card-btn">Read me</a>
              </div>
@@ -39,6 +43,8 @@
          <br>
          <div class="card">
             <img src="img/nature2.jpg" alt="Green Nature">
+            <!--Image caption-->
+            <span><p>Natural life always wins</p></span>
             <div class="card-btn">
                 <a href="#" id="card-btn">Read me</a>
             </div>
@@ -51,7 +57,7 @@
             <h2>Most like</h2>
             <img src="img/relax1.jpg" alt="Green Nature">
             <section class="Most-like">  
-                <h3>My name is Joe</h3><br>
+                <h3>My name is Joe</h3>
                 <!--image caption-->
                 <article>
                     Mauris neque quam,<span id="underline">fermentum ut</span> nisl vitae
@@ -64,7 +70,7 @@
         </div>
         <br>
         <!--Popular Post-->
-        <div class="card-slidebar box-slidecard">
+        <div class="card-slidebar box-slidecard Popular">
             <h2>Popular Post</h2><br>
             <ul class="list">
                 <li>
@@ -103,7 +109,7 @@
         </div>
         <br>
         <!--Tags-->
-        <div class="card-slidebar">
+        <div class="card-slidebar tag">
             <div id="tag">
                 <h2>Tags</h2>
             </div>
@@ -123,6 +129,6 @@
               <a href="https://www.udacity.com/" id="footer-link" target="_blank">Udacity</a>
          </p>
      </div>
-
+    </div>
     </body>
 </html>

@@ -1,0 +1,115 @@
+@media(min-width:426px) and (max-width:768px){
+    .container{
+        display: grid;
+        margin: 0;
+        grid-template-columns:280px 280px 210px;
+        grid-template-rows:150px 470px 470px 200px 90px;
+        grid-template-areas:
+        "hd hd hd"
+        "ct ct sd"
+        "ct ct sd"
+        "ct ct sd"
+        "ft ft ft";
+        padding: 0;
+    }
+
+    /*Header*/
+    .header{
+        grid-area: hd;
+        width:100%;
+        background-size: auto;
+    }
+    
+    section.transbox{
+        margin:49px 20px 0 150px;
+        padding: 5px;
+        height: 60%;
+        width: 60%;
+      }
+      section.transbox span h1,p{
+          opacity: 1;
+          margin: 4px 0 0 0;
+          padding: 0;
+    
+      }
+      
+    /*content*/
+    .content{
+        display: flex;
+        grid-area: ct;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        width: 70%;
+        height: 40%;
+        border-radius: 6px;
+        margin:10px 10px;
+      }
+      
+      
+    .card-btn{
+        margin: 0;
+      }
+      
+      #card-btn{
+        padding: 6px 24px;
+        border-radius: 4px;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bolder;
+        margin: 4px 2px;
+      }
+
+   /* slidebar */
+.slidebar{
+    grid-area: sd;
+}
+
+\\
+    /*footer*/
+    .footer{
+        grid-area: ft;
+    }
+}
+
+/*----------------------Medium laptop/screen----------------------------------*/
+@media(min-width:769px) and (max-width:1024px){
+    .container{
+        display: grid;
+        margin: 0;
+        grid-template-columns:290px 290px 290px 230px;
+        grid-template-rows:150px 470px 470px 200px 90px;
+        grid-template-areas:
+        "hd hd hd hd"
+        "ct ct ct sd"
+        "ct ct ct sd"
+        "ct ct ct sd"
+        "ft ft ft ft";
+        padding: 0;
+    }
+
+    /*header*/
+
+    section.transbox{
+        margin:55px 20px 0 200px;
+        padding: 5px;
+        height: 50%;
+        width: 50%;
+      }
+
+    section.transbox span h1,p{
+        opacity: 1;
+        margin: 4px 0 0 0;
+        padding: 0;
+  
+    }
+
+    /* slidebar */
+
+
+div.box-slidecard{
+  height: 40%;
+}
+
+}

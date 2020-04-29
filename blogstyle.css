@@ -23,6 +23,11 @@
     background-color: #c2d6d6;
     font-family:"Raleway", sans-serif;
 }
+.body{
+  background-color: #c2d6d6;
+  margin: 0;
+  padding: 0;
+}
 
 .box{
     display: flex;
@@ -67,7 +72,7 @@ ul.side-nav{
   position: fixed;
   width: 100%;
   height:auto;
-  z-index: 1;
+  z-index: 4;
 }
 
 li{
@@ -125,9 +130,12 @@ img {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+div.content p{
+  margin: 0;
+}
 .card-btn{
-  margin: 20px 0 20px 0;
-  padding: 8px 5px;
+  margin: 2px 2px;
+  padding: 5px 5px;
 
 }
 
@@ -159,7 +167,7 @@ img {
     grid-area: sd;
     background-color:#ebf0fa ;
     padding: 6px 4px;
-    margin: 4px 4px 4px;
+    margin: 4px 4px 4px 4px;
 }
 
 .card-slidebar{
