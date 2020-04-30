@@ -1,32 +1,21 @@
+@import "./rest.css";
 .container{
     display: grid;
     margin: auto;
-    grid-template-columns: 400px 400px 200px repeat(2,1fr) ;
-    grid-template-rows: 200px repeat(13,100px) 150px;
+    grid-template-columns:repeat(8,100);
+    grid-template-rows: 150px auto 100px;
     grid-template-areas:
-    "hd hd hd hd hd"
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ct ct ct sd sd "
-    "ft ft ft ft ft "
+    "hd hd hd hd hd hd hd hd"
+    "hd hd hd hd hd hd hd hd"
+    "hd hd hd hd hd hd hd hd"
     ;
     background-color: #c2d6d6;
+    width: 100%;
+    height: 100;
     font-family:"Raleway", sans-serif;
-}
-.body{
-  background-color: #c2d6d6;
-  margin: 0;
-  padding: 0;
+  }
+body{
+  background-color:red;
 }
 
 .box{
@@ -42,12 +31,10 @@
     grid-area: hd;
     font-size: large;
     text-align: center;
-    background-image: url(img/ginger&bloom_flats-header+copy.jpg);
+    background-image: url('./img/ginger&bloom_flats-header+copy.jpg');
     background-size: stretch;
     width: 100%;
     z-index: 1;
-
-
 }
 
 section.transbox{
@@ -63,7 +50,7 @@ section.transbox span{
 }
 
 /*header navbar*/
-ul.side-nav{
+.side-nav{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -72,7 +59,7 @@ ul.side-nav{
   position: fixed;
   width: 100%;
   height:auto;
-  z-index: 4;
+  z-index: 1;
 }
 
 li{
@@ -81,7 +68,6 @@ li{
   
    li a {
     display: block;
-    color: #ebf0fa;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;

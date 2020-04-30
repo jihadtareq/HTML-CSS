@@ -1,3 +1,4 @@
+@import "./rest.css";
 .container{
     display: grid;
     margin: 0;
@@ -19,9 +20,7 @@
     font-family:"Raleway", sans-serif;
 }
 .body{
-    margin: 0;
-    padding: 0;
-    background-color: #c2d6d6;
+    background-color:brown;
 }
 
 .box{
