@@ -63,10 +63,8 @@ section.transbox span{
 
 /*header navbar*/
 .side-nav{
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color:black;
   position: fixed;
   width: 100%;
