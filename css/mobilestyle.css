@@ -1,8 +1,9 @@
+@import './rest.css';
 @media(max-width:425px){
     .container{
         display: grid;
         margin: 0;
-        grid-template-columns:212px 212px;
+        grid-template-columns:repeat(2,1fr);
         grid-template-rows:150px 470px 470px 200px 90px;
         grid-template-areas:
         "hd hd"
@@ -21,17 +22,22 @@
     }
     
     section.transbox{
-        margin:49px 20px 0 80px;
+        margin:49px 20px 0 60px;
         padding: 5px;
         height: 60%;
         width: 60%;
-      }
-      section.transbox span h1,p{
-          opacity: 1;
-          margin: 4px 0 0 0;
-          padding: 0;
+    }
+    section.transbox span h1,p{
+        opacity: 1;
+        margin: 4px 0 0 0;
+        padding: 0;
     
-      }
+    }
+
+    .about-nav{
+      display: none;
+    }
+
       
     /*content*/
     .content{
@@ -65,7 +71,7 @@
 .slidebar{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content:space-between;
     grid-area: sd;
 }
 
@@ -135,7 +141,7 @@ li img{
 
 .tag{
  width: 40%;
- height: 80%;
+ height: 100%;
  margin: 2px;
 }
 
