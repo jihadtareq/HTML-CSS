@@ -20,7 +20,8 @@
     }
     
     section.transbox{
-        margin:49px 20px 0 150px;
+        margin:auto;
+        margin-top: 49px;
         padding: 5px;
         height: 60%;
         width: 60%;
