@@ -1,13 +1,12 @@
+@import './rest.css';
 @media(min-width:426px) and (max-width:768px){
     .container{
         display: grid;
         margin: 0;
-        grid-template-columns:280px 280px 210px;
-        grid-template-rows:150px 470px 470px 200px 90px;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:150px auto 90px;
         grid-template-areas:
         "hd hd hd"
-        "ct ct sd"
-        "ct ct sd"
         "ct ct sd"
         "ft ft ft";
         padding: 0;
@@ -62,11 +61,10 @@
       }
 
    /* slidebar */
-.slidebar{
+    .slidebar{
     grid-area: sd;
-}
+     }
 
-\\
     /*footer*/
     .footer{
         grid-area: ft;
@@ -78,12 +76,10 @@
     .container{
         display: grid;
         margin: 0;
-        grid-template-columns:290px 290px 290px 230px;
-        grid-template-rows:150px 470px 470px 200px 90px;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows:150px auto 90px;
         grid-template-areas:
         "hd hd hd hd"
-        "ct ct ct sd"
-        "ct ct ct sd"
         "ct ct ct sd"
         "ft ft ft ft";
         padding: 0;
